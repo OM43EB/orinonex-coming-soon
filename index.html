@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ORINONEX | Coming Soon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon | ORINONEX</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #151515, #2d2d2d);
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       height: 100vh;
-      text-align: center;
+      backdrop-filter: brightness(0.6);
     }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      font-size: 48px;
+      margin-bottom: 20px;
     }
+
     p {
-      font-size: 1.2rem;
-      color: #ccc;
+      font-size: 20px;
+      margin-bottom: 30px;
     }
-    .logo {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 40px;
-      color: #00c896;
+
+    a {
+      color: #FFD700;
+      font-size: 18px;
+      text-decoration: none;
+      background: #222;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
     }
-    .footer {
-      position: absolute;
-      bottom: 15px;
-      font-size: 0.9rem;
-      color: #777;
+
+    a:hover {
+      background: #444;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="logo">ORINONEX</div>
-  <h1>We're Launching Soon</h1>
-  <p>Our website is under construction. Stay tuned for something amazing!</p>
-  <div class="footer">© 2025 ORINONEX. All rights reserved.</div>
+  <div class="container">
+    <h1>ORINONEX</h1>
+    <p>Our website is under construction. We'll be here soon with our new store.</p>
+    <p>📧 Contact us at: <a href="mailto:info@orinonex.com">info@orinonex.com</a></p>
+  </div>
 </body>
 </html>
